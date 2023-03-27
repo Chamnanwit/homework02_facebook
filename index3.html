@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-family: Helvetica, sans-serif;
+        }
+        .top {
+            height: 85vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #f0f2f5;
+        }
+        .top p{
+            font-size: 1.2rem;
+        }
+        .data{
+            text-align: center;
+        }
+        form {
+            border: 1px solid silver;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: white;
+            bottom: auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 4px silver;
+            margin-bottom: 16px;
+            width: 350px;
+        }
+        input {
+            width: 90%;
+            margin: auto;
+            padding: 12px;
+            margin-block: 4px;
+            border: 1px solid silver;
+            border-radius: 4px;
+        }
+        .login {
+            background: #1877f2;
+            border-color: rgba(102, 102, 182, 0);
+            border-radius: 4px;
+            padding: 12px;
+            color: white;
+            cursor: pointer;
+        }
+        .forget {
+            font-size: 0.8em; 
+            color: rgb(42, 132, 217);
+        }
+        .forget:hover{
+            text-decoration: underline;
+        }
+        .new {
+            border: 1px solid #42b72a;
+            background: #42b72a;
+            color: white;
+            border-radius: 4px;
+            width: 45%;
+            margin-inline: auto;
+            padding-block: 8px;
+        }
+        .new:hover {
+            background-color: rgb(36, 171, 54)
+        }
+        a {
+            text-align: center;
+            text-decoration: none;
+            margin-block: 16px;
+        }
+        .page a {
+            margin: auto;
+        }
+        .page:hover {
+            text-decoration: underline;
+        }
+        hr {
+            width: 90%;
+            margin: auto;
+            margin-block: 4px;
+        }
+        .bottom {
+            color: rgb(168, 166, 166);
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 8px;
+        }
+        @media (max-width: 700px) {
+            .top {
+                display: flex;
+                flex-direction: column;
+            }
+            .top img {
+                margin: 50px;
+                position: relative;
+                left: 8%;
+            }
+            .logo > p {
+                text-align: center;
+            }
+        }
+        .bottom{
+    display: flex;
+    flex-flow: column;
+}
+.language-b > *{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: baseline;
+    margin: 0vw 10vw;
+}
+.line-b {
+    margin: 0.5vw 10vw;
+}
+.eles-b > *{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 0vw 10vw;
+}
+li > * {
+    /* margin: 5px 10px 5px 10px; */
+    padding: 5px 10px 5px 10px;
+    color: #ccc;
+}
+li:hover {
+    text-decoration: underline #ccc;
+}
+a {
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="	https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg
+            " alt="Facebook Logo" style="width: 300px; margin: -28px;"/>
+            <p>Facebook ช่วยคุณเชื่อมต่อและแชร์</p>
+            <p>กับผู้คนมากมายรอบตัวคุณ</p>
+        </div>
+        <div class="data">
+            <form action="#">
+                <input type="text" name="mail" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ" style="margin-top: 8px;"/>
+                <input type="text" name="pass" placeholder="รหัสผ่าน"/>
+                <input class="login" type="submit" name="login" value="เข้าสู่ระบบ"/>
+                <a class="forget" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">ลืมรหัสผ่านใช่หรือไม่</a>
+                <hr>
+                <a class="new" href="#">สร้างบัญชีใหม่</a>
+            </form>
+            <a class="page" style="font-size: 0.8em; color: black;" href="https://www.facebook.com/pages/create/?ref_type=registration_form"><strong>สร้างเพจ</strong></a> <span style="font-size: 0.8em; color: black;"> สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</span>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="language-b">
+            <ul class="ul-langusge-b">
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">普通话</a></li>
+                <li><a href="#">Português</a></li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">한국인</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><a href="#">Français</a></li>
+                <li><a href="#">Deutsch</a></li>
+            </ul>
+        </div>
+        <div class="line-b" >
+            <hr>
+        </div>
+        <div class="eles-b">
+            <ul class="ul-eles-b">
+                <li><a href="#">สมัคร</a></li>
+                <li><a href="#">เข้าสู่ระบบ</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Faccook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">สถานที่</a></li>
+                <li><a href="#">เกม</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facecook pay</a></li>
+                <li><a href="#">สมัคร</a></li>
+                <li><a href="#">เข้าสู่ระบบ</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Faccook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">สถานที่</a></li>
+                <li><a href="#">เกม</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facecook pay</a></li>
+                <li><a href="#">สมัคร</a></li>
+                <li><a href="#">เข้าสู่ระบบ</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Faccook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">สถานที่</a></li>
+                <li><a href="#">เกม</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facecook pay</a></li>
+            </ul>
+        </div>
+        <div class="by-b" style="margin: 8px;">
+            <a href="#" style="color: #ccc; margin: 0vw 10vw;">Jobs © 2023</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-family: Helvetica, sans-serif;
+        }
+        .top {
+            height: 85vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(240, 239, 237);
+        }
+        form {
+            border: 1px solid silver;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: white;
+            bottom: auto;
+            border-radius: 4px;
+            box-shadow: 4px 4px 8px silver;
+            margin-bottom: 16px;
+        }
+        input {
+            width: 80%;
+            margin: auto;
+            padding: 8px;
+            margin-block: 4px;
+            border: 1px solid silver;
+            border-radius: 4px;
+        }
+        .login {
+            background: rgb(88, 88, 204);
+            border-color: rgba(102, 102, 182, 0);
+            border-radius: 4px;
+            padding: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        .login:hover {
+            background-color: rgb(69, 69, 188);
+        }
+        .forget {
+            font-size: 0.8em; 
+            color: rgb(42, 132, 217);
+        }
+        .forget:hover{
+            text-decoration: underline;
+        }
+        .new {
+            border: 1px solid rgb(76, 232, 96);
+            background: rgb(76, 232, 96);
+            color: white;
+            border-radius: 4px;
+            width: 50%;
+            margin-inline: auto;
+            padding-block: 4px;
+        }
+        .new:hover {
+            background-color: rgb(46, 226, 70);
+        }
+        a {
+            text-align: center;
+            text-decoration: none;
+            margin-block: 16px;
+        }
+        hr {
+            width: 90%;
+            margin: auto;
+            margin-block: 4px;
+        }
+        .bottom {
+            color: rgb(168, 166, 166);
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 8px;
+        }
+        @media (max-width: 700px) {
+            .top {
+                display: flex;
+                flex-direction: column;
+            }
+            .logo > p {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Facebook_Logo_%282015%29_light.svg/1920px-Facebook_Logo_%282015%29_light.svg.png" alt="Facebook Logo" style="width: 200px; margin-block: 16px;"/>
+            <p>Facebook ช่วยคุณเชื่อมต่อและแชร์</p>
+            <p>กับผู้คนมากมายรอบตัวคุณ</p>
+        </div>
+        <div class="data">
+            <form action="#">
+                <input type="text" name="mail" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ" style="margin-top: 8px;"/>
+                <input type="text" name="pass" placeholder="รหัสผ่าน"/>
+                <input class="login" type="submit" name="login" value="เข้าสู่ระบบ"/>
+                <a class="forget" href="#">ลืมรหัสผ่านใช่หรือไม่</a>
+                <hr>
+                <a class="new" href="#">สร้างบัญชีใหม่</a>
+            </form>
+            <a style="font-size: 0.8em; color: black;" href="#"><strong>สร้างเพจ</strong></a> <span style="font-size: 0.8em; color: black;"> สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</span>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nulla ducimus minima minus quod tempora numquam expedita voluptates cupiditate vel sunt eum adipisci id, animi magni, quam a sequi labore.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium excepturi quia perspiciatis animi. Magnam, quidem! Eaque vitae nihil dolor! Id corporis ipsa reprehenderit eos animi ducimus hic repudiandae eaque libero!</p><br>
+        <p>Facebook &copy; 2021</p>
+    </div>
+</body>
+</html>
